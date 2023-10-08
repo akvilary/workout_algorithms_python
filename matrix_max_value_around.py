@@ -52,8 +52,8 @@ def main(matrix: List[list], coordinates: tuple) -> int:
             else max_column_coordinate,
         }
 
-        # Вычислим максимальное значение по зоне поиска, кроме текущей координаты
-        # При любых размерах матрицы будет не более 9 итераций (1 из них пропускаем)
+        # Вычислим максимальное значение по зоне поиска, кроме текущей координаты.
+        # При любых размерах матрицы будет от 4 до 9 итераций (1 из них пропускаем)
         for row in range(search['start_row'], search['end_row'] + 1):
             for column in range(search['start_column'], search['end_column'] + 1):
                 # пропускаем текущую координату
